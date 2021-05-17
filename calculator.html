@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <meta name="description" content="Challenge Ironhack">
+  <meta name="keywords" content="JavaScript, Calculator">
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/calculator.js"></script>
+</head>
+
+<body>
+  <div id="calculator">
+    <table>
+      <tr>
+        <td colspan="4" align="center">
+          <input name="display" type="text" class="colour_display" id="display" size="20">
+        </td>
+      </tr>
+      <tr>
+        <td><input name="num1" type="button" class="cell" id="num1" value="1" onclick="displayNumber(1)"></td>
+        <td><input name="num2" type="button" class="cell" id="num2" value="2" onclick="displayNumber(2)"></td>
+        <td><input name="num3" type="button" class="cell" id="num3" value="3" onclick="displayNumber(3)"></td>
+        <td><input name="button" type="button" class="cell" id="button" value="+" onclick="addition()"></td>
+      </tr>
+      <tr>
+        <td><input name="num4" type="button" class="cell" id="num4" value="4" onclick="displayNumber(4)"></td>
+        <td><input name="num5" type="button" class="cell" id="num5" value="5" onclick="displayNumber(5)"></td>
+        <td><input name="num6" type="button" class="cell" id="num6" value="6" onclick="displayNumber(6)"></td>
+        <td><input name="button2" type="button" class="cell" id="button2" value="-" onclick="subtraction()"></td>
+      </tr>
+      <tr>
+        <td><input name="num7" type="button" class="cell" id="num7" value="7" onclick="displayNumber(7)"></td>
+        <td><input name="num8" type="button" class="cell" id="num8" value="8" onclick="displayNumber(8)"></td>
+        <td><input name="num9" type="button" class="cell" id="num9" value="9" onclick="displayNumber(9)"></td>
+        <td><input name="button3" type="button" class="cell" id="button3" value="*" onclick="multiplication()"></td>
+      </tr>
+      <tr>
+        <td><input name="button5" type="button" class="cell" id="button5" value="C" onclick="restart()"></td>
+        <td><input name="num0" type="button" class="cell" id="num0" value="0" onclick="displayNumber(0)"></td>
+        <td><input name="button6" type="button" class="cell" id="button6" value="=" onclick="equals()"></td>
+        <td><input name="button4" type="button" class="cell" id="button4" value="/" onclick="divide()"></td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    document.getElementById("display").value = 0;
+  </script>
+
+</body>
+
+</html>

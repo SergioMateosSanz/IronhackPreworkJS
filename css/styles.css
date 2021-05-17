@@ -1,0 +1,33 @@
+#calculator {
+	background-color: gray;
+	width: 27vw;
+	margin: 0 auto;
+	background-position: top;
+    background-repeat: repeat-y;
+    background-size: cover;
+	padding-bottom: 10px;
+}
+
+table{
+	margin:auto;
+}
+
+td {
+	width: 25%;
+}
+
+.cell{
+	width:60px;
+	height:60px;
+}
+
+.colour_display{
+	height:40px;
+	background-color:#000;
+	border:medium #FFF;
+	font: "Space Age";
+	color:#0F0;
+	font-size:20px;
+	text-align:left;
+	padding:5px;
+}
